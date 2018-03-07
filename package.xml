@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Iuvo_Cache</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Iuvo Commercial Extension</license>
+    <channel>Community</channel>
+    <extends/>
+    <summary>Full page caching goodness</summary>
+    <description>Full page caching for both community and enterprise. Cache in files or memcached for distributed servers.</description>
+    <notes>Initial version. Tested with production server and taking orders.</notes>
+    <authors><author><name>Justin Pratt</name><user>iuvocommerce</user><email>sales@iuvocommerce.com</email></author></authors>
+    <date>2014-10-08</date>
+    <time>02:47:10</time>
+    <contents><target name="magecommunity"><dir name="Iuvo"><dir name="IuvoCache"><dir name="Block"><dir name="Core"><file name="Messages.php" hash="0be38a6c3a7b928f4b9c0f7aa2416729"/></dir><dir name="Page"><file name="Html.php" hash="45b5a545409f422c5215124e296b7e6f"/></dir></dir><dir name="Helper"><file name="Data.php" hash="1064406b72434158c946104b319d3e60"/></dir><dir name="Model"><dir name="App"><dir name="Cache"><file name="Observer.php" hash="52b00eeb214a0c82e7bcef6572607b75"/></dir></dir><dir name="Server"><file name="Files.php" hash="01a8df5098bf72292131e053444a9799"/><file name="Memcache.php" hash="7b941bf9f7c21e7f38ba4ecebab505d2"/><file name="Redis.php" hash="3eb521bf37d6c6ceacd0ffa580c96a33"/></dir><file name="Server.php" hash="378ea97d84e4faf5fc805de398079b72"/></dir><dir name="etc"><file name="config.xml" hash="64f79ea82c6fb21ccf1f2cfc5eff342d"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Iuvo_IuvoCache.xml" hash="98bff5637e769d15b167c461bfb4049d"/></dir><dir name="."><file name="iuvocache.xml" hash="8931761c9eba4110c6b805b206e8e055"/></dir></target><target name="mage"><dir name="."><file name="iuvocache.php" hash="89ce0b1ace1eac78ed66493b5802463a"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="iuvocache.xml" hash="f488fbb7bfdf9d9fc1178657ef77f3d0"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Iuvo Commercial Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Iuvo Commercial Extension License.
+ * It is available through the world-wide-web at this URL:
+ * http://www.iuvocommerce.com/license commercial-extension
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@iuvocommerce.com.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this package to newer
+ * versions in the future. 
+ *
+ * @category   Iuvo
+ * @package    Iuvo_IuvoCache
+ * @copyright  Copyright (c) 2014 Iuvo
+ * @license    http://www.iuvocommerce.com/license
+ */
+ -->
+<config>
+	<frontend>
+		<layout>
+			<updates>
+				<iuvocache>
+					<file>iuvocache.xml</file>
+				</iuvocache>
+			</updates>
+		</layout>
+	</frontend>
+	<global>
+		<blocks>
+			<page>
+				<rewrite>
+					<html>Iuvo_IuvoCache_Block_Page_Html</html>
+				</rewrite>
+			</page>
+			<core>
+				<rewrite>
+					<messages>Iuvo_IuvoCache_Block_Core_Messages</messages>
+				</rewrite>
+			</core>
+		</blocks>
+		<models>
+			<iuvocache>
+				<class>Iuvo_IuvoCache_Model</class>
+			</iuvocache>
+		</models>
+		<helpers>
+			<iuvocache>
+				<class>Iuvo_IuvoCache_Helper</class>
+			</iuvocache>
+		</helpers>
+		<events>
+			<application_clean_cache>
+				<observers>
+					<clean_cached_page>
+						<type>singleton</type>
+						<class>iuvocache/app_cache_observer</class>
+						<method>cleanIuvoCache</method>
+					</clean_cached_page>
+				</observers>
+			</application_clean_cache>
+		</events>
+		<cache>
+			<types>
+				<iuvocache>
+					<label>Whole Pages</label>
+				</iuvocache>
+			</types>
+			<expires>
+				<iuvocache>
+					<label>Whole Page</label>
+				</iuvocache>
+			</expires>
+		</cache>
+	</global>
+</config>
